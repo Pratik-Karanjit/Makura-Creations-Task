@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Abroad Hero</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-left">
+      <div class="social-icon"><i class="fab fa-facebook-f"></i></div>
+      <div class="social-icon"><i class="fab fa-instagram"></i></div>
+      <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+    </div>
+    <div class="top-right">
+      <a href="#">Blogs</a>
+      <a href="#">Events</a>
+      <a href="#">About Us</a>
+      <a href="#">Mock Test</a>
+      <a href="#" class="dropdown-link">
+        Student Resources <i class="fas fa-caret-down dropdown-arrow"></i>
+      </a>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Main Navbar -->
+  <header class="navbar">
+    <div style="display: flex; align-items: center; justify-content: center; flex-direction: row; gap: 10px;">
+
+    <!-- Mobile hamburger menu -->
+    <button class="hamburger-menu" id="hamburgerToggle" aria-label="Toggle mobile menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+      <div class="logo">
+        <img src="./images/Primary Logo.png" alt="360 Education Logo" class="logo-img">
+      </div>
+    </div>
+
+
+    <nav class="nav-links">
+      <a href="#" class="dropdown-link">
+        Services <i class="fas fa-caret-down dropdown-arrow"></i>
+      </a>
+      <a href="#" class="dropdown-link">
+        Study Destinations <i class="fas fa-caret-down dropdown-arrow"></i>
+      </a>
+      <a href="#">Scholarships</a>
+      <a href="#">Test Preparation</a>
+      <a href="#">Program & University</a>
+
+      <p class="straight-bar">|</p>
+      
+      <div class="nav-right">
+        <span class="search"><i class="fas fa-search"></i></span>
+        <button class="btn-outline"> <p>Contact Us</p></button>
+      </div>
+    </nav>
+
+    <!-- Mobile nav right (search + contact for mobile) -->
+    <div class="mobile-nav-right">
+      <span class="search"><i class="fas fa-search"></i></span>
+      <button class="btn-outline-mobile">Contact Us</button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-content">
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close mobile menu">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <div class="mobile-nav-links">
+        <a href="#" class="mobile-nav-link">
+          Services <i class="fas fa-caret-down dropdown-arrow"></i>
+        </a>
+        <a href="#" class="mobile-nav-link">
+          Study Destinations <i class="fas fa-caret-down dropdown-arrow"></i>
+        </a>
+        <a href="#" class="mobile-nav-link">Scholarships</a>
+        <a href="#" class="mobile-nav-link">Test Preparation</a>
+        <a href="#" class="mobile-nav-link">Program & University</a>
+        <a href="#" class="mobile-nav-link">Blogs</a>
+        <a href="#" class="mobile-nav-link">Events</a>
+        <a href="#" class="mobile-nav-link">About Us</a>
+        <a href="#" class="mobile-nav-link">Mock Test</a>
+        <a href="#" class="mobile-nav-link">
+          Student Resources <i class="fas fa-caret-down dropdown-arrow"></i>
+        </a>
+      </div>
+      
+      <button class="mobile-contact-btn">Contact Us</button>
+      
+      <div class="mobile-social-icons">
+        <div class="social-icon"><i class="fab fa-facebook-f"></i></div>
+        <div class="social-icon"><i class="fab fa-instagram"></i></div>
+        <div class="social-icon"><i class="fab fa-tiktok"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Desktop Hero Content -->
+    <div class="hero-content hero-content-desktop" data-aos="fade-up" data-aos-duration="1000">
+      <div>
+        <h1>
+          Get <span class="expert-guidance">Expert Guidance</span> for <br>
+          Your <span>Study Abroad Plans</span>
+        </h1>
+        <p>
+          Discover top universities, explore scholarship options, and get professional  <br>
+          assistance to turn your international education dreams into reality.
+        </p>
+        <button class="btn-primary">Book an Appointment</button>
+      </div>
+
+      <!-- Mobile Hero Image (appears above stats on mobile only) -->
+      <div class="hero-image-mobile">
+        <img src="./images/HeroRight.png" alt="Study Abroad Hero" class="hero-right-image-mobile">
+      </div>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stat">
+          <i class="fas fa-passport stat-icon"></i>
+          <div class="stat-text">
+            <h3>98%</h3>
+            <p>Visa Success Rate</p>
+          </div>
+        </div>
+        <div class="stat">
+          <i class="fas fa-university stat-icon"></i>
+          <div class="stat-text">
+            <h3>100+</h3>
+            <p>Partnered Universities</p>
+          </div>
+        </div>
+        <div class="stat">
+          <i class="fas fa-map-marker-alt stat-icon"></i>
+          <div class="stat-text">
+            <h3>10+</h3>
+            <p>Study Destinations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Hero Content (different order) -->
+    <div class="hero-content hero-content-mobile">
+      <!-- Text content first -->
+      <div class="hero-text-mobile">
+        <h1>
+          Get <span class="expert-guidance">Expert Guidance</span> for 
+          Your <span>Study Abroad Plans</span>
+        </h1>
+        <p>
+          Discover top universities, explore scholarship options, and get professional assistance to turn your international education dreams into reality.
+        </p>
+        <button class="btn-primary">Book an Appointment</button>
+      </div>
+
+      <!-- Image second -->
+      <div class="hero-image-mobile">
+        <img src="./images/HeroRight.png" alt="Study Abroad Hero" class="hero-right-image-mobile">
+      </div>
+
+      <!-- Stats third -->
+      <div class="stats">
+        <div class="stat">
+          <i class="fas fa-passport stat-icon"></i>
+          <div class="stat-text">
+            <h3>98%</h3>
+            <p>Visa Success Rate</p>
+          </div>
+        </div>
+        <div class="stat">
+          <i class="fas fa-university stat-icon"></i>
+          <div class="stat-text">
+            <h3>100+</h3>
+            <p>Partnered Universities</p>
+          </div>
+        </div>
+        <div class="stat">
+          <i class="fas fa-map-marker-alt stat-icon"></i>
+          <div class="stat-text">
+            <h3>10+</h3>
+            <p>Study Destinations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="hero-image" data-aos="fade-up" data-aos-duration="1000">
+      <img src="./images/HeroRight.png" alt="Study Abroad Hero" class="hero-right-image">
+    </div>
+
+    <!-- Button Arrow -->
+    <img src="./images/AppointmentVector.png" alt="Button Arrow" class="button-arrow">
+  </section>
+
+  <!-- Upcoming Events Section -->
+  <section class="events-section">
+    <div class="container">
+      <div class="events-header">
+        <div class="events-title-group">
+          <div class="airplane-icon">
+            <img src="./images/UpcomingEventsArrow.png" alt="Airplane Icon" class="airplane-img">
+          </div>
+          <div>
+            <h2>Upcoming <span class="highlight-blue">Events</span></h2>
+            <p>Turn your international education dreams into reality.</p>
+          </div>
+        </div>
+        <button class="btn-view-all">View All Events</button>
+      </div>
+
+      <div class="events-grid"  data-aos="fade-up" data-aos-duration="1000">
+        <!-- Event Card 1 -->
+        <div class="event-card featured">
+          <div class="event-image">
+            <img src="./images/event1.png" alt="Event 1" class="event-bg-image">
+          </div>
+          <div class="event-details">
+            <div class="location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Biratnagar</span>
+            </div>
+            <div class="event-title-date">
+              <h4>USA Education Fair - <br> May & August Intake</h4>
+              <div class="event-date">28th Jan 2025</div>
+            </div>
+            <button class="btn-register">Register Now</button>
+          </div>
+        </div>
+
+        <!-- Event Card 2 -->
+        <div class="event-card">
+          <div class="event-image">
+            <img src="./images/event2.png" alt="Event 2" class="event-bg-image">
+          </div>
+          <div class="event-details">
+            <div class="location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Biratnagar</span>
+            </div>
+            <div class="event-title-date">
+              <h4>USA Education Fair - <br> May & August Intake</h4>
+              <div class="event-date">28th Jan 2025</div>
+            </div>
+            <button class="btn-register">Register Now</button>
+          </div>
+        </div>
+
+        <!-- Event Card 3 -->
+        <div class="event-card">
+          <div class="event-image">
+            <img src="./images/event3.png" alt="Event 3" class="event-bg-image">
+          </div>
+          <div class="event-details">
+            <div class="location">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Biratnagar</span>
+            </div>
+            <div class="event-title-date">
+              <h4>USA Education Fair - <br> May & August Intake</h4>
+              <div class="event-date"><span>28th Jan 2025</span></div>
+            </div>
+            <button class="btn-register">Register Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile View All Events Button -->
+      <div class="mobile-view-all-container">
+        <button class="btn-view-all-mobile">View All Events</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+<section class="form-section">
+  <div class="file-decoration">
+    <img src="./images/File.png" alt="File Decoration" class="file-decoration-img">
+  </div>
+  
+  <div class="file-bottom-decoration">
+    <img src="./images/FileBottom.png" alt="File Bottom Decoration" class="file-bottom-decoration-img">
+  </div>
+  
+  <div class="form-container">
+    <!-- Left Side - Images -->
+    <div class="form-left">
+      <div class="form-images">
+        <img src="./images/HexaBackground.png" alt="Hexagon Background" class="hexa-background">
+        <img src="./images/FormSectionImage.png" alt="Students" class="form-main-image">
+        <div class="play-button"></div>
+      </div>
+    </div>
+
+    <!-- Right Side - Form -->
+    <div class="form-right">
+      <div class="form-title-group">
+        <div class="form-arrow-icon">
+          <img src="./images/UpcomingEventsArrow.png" alt="Arrow Icon" class="form-arrow-img">
+        </div>
+        <div>
+          <h2 class="form-title">
+            <span class="highlight">Fill out the form</span> below
+          </h2>
+          <p class="form-subtitle">
+            Our experts will connect with you to help you choose the right university, program, and scholarships.
+          </p>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <div class="form-input-with-icon">
+              <i class="fas fa-user form-input-icon"></i>
+              <input type="text" class="form-input" placeholder="Enter your full name">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <div class="form-input-with-icon">
+              <i class="fas fa-phone form-input-icon"></i>
+              <input type="tel" class="form-input" placeholder="Enter your phone number">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <div class="form-input-with-icon">
+              <i class="fas fa-envelope form-input-icon"></i>
+              <input type="email" class="form-input" placeholder="Enter your email address">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Desired Degree</label>
+            <div class="form-select-with-icon">
+              <i class="fas fa-graduation-cap form-input-icon"></i>
+              <select class="form-select">
+                <option>Select the degree</option>
+                <option>Bachelor's</option>
+                <option>Master's</option>
+                <option>PhD</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Desired Faculty</label>
+            <div class="form-select-with-icon">
+              <i class="fas fa-book form-input-icon"></i>
+              <select class="form-select">
+                <option>Enter your name of the faculty</option>
+                <option>Engineering</option>
+                <option>Business</option>
+                <option>Medicine</option>
+                <option>Arts</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Desired Destination</label>
+            <div class="form-select-with-icon">
+              <i class="fas fa-globe form-input-icon"></i>
+              <select class="form-select">
+                <option>Select the destination</option>
+                <option>USA</option>
+                <option>Canada</option>
+                <option>Australia</option>
+                <option>UK</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label class="form-label">Test Preparation</label>
+          <div class="form-select-with-icon">
+            <i class="fas fa-clipboard-list form-input-icon"></i>
+            <select class="form-select">
+              <option>Select the Test Preparation</option>
+              <option>IELTS</option>
+              <option>TOEFL</option>
+              <option>SAT</option>
+              <option>GRE</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Enter your queries/message"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Mobile Images Section (hidden on desktop) -->
+    <div class="form-mobile-images">
+      <div class="form-images">
+        <img src="./images/HexaBackground.png" alt="Hexagon Background" class="hexa-background">
+        <img src="./images/FormSectionImage.png" alt="Students" class="form-main-image">
+        <div class="play-button"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Top Study Destinations Section -->
+<section class="destinations-section">
+  <div class="destinations-icon">
+            <img src="./images/DestinationPlane.png" alt="Destinations Icon" class="airplane-img">
+          </div>
+
+            <div class="pyramid-icon">
+            <img src="./images/Pyramid.png" alt="Pyramid Icon" class="airplane-img">
+          </div>
+  <div class="destinations-container">
+    <div class="destinations-header">
+      <h2>Explore our <span class="highlight-blue">Top Study Destinations</span></h2>
+      <p>Turn your international education dreams into reality.</p>
+    </div>
+    
+    <div class="destinations-slider-wrapper">
+      <button class="slider-btn prev-btn">←</button>
+      <div class="destinations-slider" id="destinationsSlider">
+        <!-- Destination Card 1 - Featured with border -->
+        <div class="destination-card featured">
+          <div class="destination-image">
+            <img src="./images/AustraliaImage.png" alt="Australia" class="destination-img">
+          </div>
+          <div class="destination-info">
+            <div class="destination-flag"><img src="./images/AustraliaLogo.png" alt="Australia Flag"></div>
+            <div class="destination-info-wrapper">
+              <div class="destination-name">Australia</div>
+              <div class="destination-arrow">→</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Destination Card 2 -->
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="./images/USAImage.png" alt="USA" class="destination-img">
+          </div>
+          <div class="destination-info">
+            <div class="destination-flag"><img src="./images/USALogo.png" alt="USA Flag"></div>
+            <div class="destination-info-wrapper">
+
+            <div class="destination-name">USA</div>
+            <div class="destination-arrow">→</div>
+          </div>
+          </div>
+        </div>
+        
+        <!-- Destination Card 3 -->
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="./images/CanadaImage.png" alt="Canada" class="destination-img">
+          </div>
+          <div class="destination-info">
+            <div class="destination-flag"><img src="./images/CanadaLogo.png" alt="Canada Flag"></div>
+            <div class="destination-info-wrapper">
+
+            <div class="destination-name">Canada</div>
+            <div class="destination-arrow">→</div>
+          </div>
+          </div>
+        </div>
+        
+        <!-- Destination Card 4 -->
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="./images/GermanyImage.png" alt="Germany" class="destination-img">
+          </div>
+          <div class="destination-info">
+            <div class="destination-flag"><img src="./images/GermanyLogo.png" alt="Germany Flag"></div>
+            <div class="destination-info-wrapper">
+
+              <div class="destination-name">Germany</div>
+              <div class="destination-arrow">→</div>
+          </div>
+          </div>
+        </div>
+        
+        <!-- Destination Card 5 -->
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="./images/New Zealand.png" alt="New Zealand" class="destination-img">
+          </div>
+          <div class="destination-info">
+            <div class="destination-flag"><img src="./images/NewZealandLogo.png" alt="New Zealand Flag"></div>
+            <div class="destination-info-wrapper">
+
+            <div class="destination-name">New Zealand</div>
+            <div class="destination-arrow">→</div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn next-btn">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- Legacy Section -->
+<section class="legacy-section">
+  <div class="legacy-container">
+    <!-- Left Content -->
+    <div class="legacy-content" data-aos="fade-right" data-aos-duration="1000">
+      <h2>A Legacy of Trust, Excellence, and <span class="highlight-blue">Student Success</span></h2>
+      <p>At 360 Education, we are committed to guiding students toward a successful international education journey. With expert counselling, comprehensive support, and a strong network of global institutions, we help students make informed decisions and achieve their academic dreams with confidence.</p>
+      
+      <!-- Stats Grid -->
+      <div class="legacy-stats">
+        <div class="legacy-stat">
+          <div class="stat-top">
+            <div class="stat-icon-wrapper">
+              <i class="fas fa-passport"></i>
+            </div>
+            <h3>98.2%</h3>
+          </div>
+          <p>Visa Success Rate</p>
+        </div>
+        
+        <div class="legacy-stat">
+          <div class="stat-top">
+            <div class="stat-icon-wrapper">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>500+</h3>
+          </div>
+          <p>Partnered Universities</p>
+        </div>
+        
+        <div class="legacy-stat">
+          <div class="stat-top">
+            <div class="stat-icon-wrapper">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>8</h3>
+          </div>
+          <p>Study Destinations</p>
+        </div>
+        
+        <div class="legacy-stat">
+          <div class="stat-top">
+            <div class="stat-icon-wrapper">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>15K+</h3>
+          </div>
+          <p>Successful Students</p>
+        </div>
+        
+        <div class="legacy-stat">
+          <div class="stat-top">
+            <div class="stat-icon-wrapper">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>23</h3>
+          </div>
+          <p>Years of Experience</p>
+        </div>
+        
+        <div class="legacy-stat">
+          <div class="stat-top">
+            <div class="stat-icon-wrapper">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <h3>$5M+</h3>
+          </div>
+          <p>Scholarships Secured</p>
+        </div>
+      </div>
+      
+      <button class="legacy-btn">Learn More about 360 Education</button>
+    </div>
+    
+    <!-- Right Image -->
+    <div class="legacy-image" data-aos="fade-left" data-aos-duration="1000">
+      <img src="./images/360EducationImage.png" alt="360 Education Students" class="legacy-main-image">
+    </div>
+    
+    <!-- Decorative Plane -->
+    <div class="legacy-plane">
+      <img src="./images/360EducationPlane.png" alt="Decorative Plane" class="plane-decoration">
+    </div>
+  </div>
+</section>
+
+<!-- Personalized Solutions Section -->
+<section class="personalized-solutions-section">
+   <div class="cap-decoration">
+      <img src="./images/Cap.png" alt="Cap Plane" class="plane-decoration">
+    </div>
+  <div class="personalized-solutions-header">
+    <h2 class="personalized-solutions-title">
+      <span class="highlight-blue">Personalized Solutions</span> for Your Global Education
+    </h2>
+    <p class="personalized-solutions-subtitle">
+      Turn your international education dreams into reality.
+    </p>
+  </div>
+  <div class="personalized-solutions-container" data-aos="fade-up" data-aos-duration="1000">
+    <!-- Left Image -->
+    <div class="personalized-solutions-left">
+      <img src="./images/PersonalizedSolutionImage.png" alt="Personalized Solutions" class="personalized-solutions-image">
+      
+    </div>
+    
+    <!-- Right Content -->
+    <div class="personalized-solutions-content">
+      
+      <!-- Mobile Images (hidden on desktop) -->
+      <div class="personalized-solutions-mobile-images">
+        <div class="mobile-image-container">
+          <img src="./images/PersonalizePhone.png" alt="Personalized Phone" class="personalized-mobile-img">
+          <img src="./images/PersonalizedMeetPhone.png" alt="Personalized Meet Phone" class="personalized-mobile-img">
+        </div>
+      </div>
+      
+      <!-- Career Counselling Section -->
+      <div class="career-counseling-section">
+        <div class="career-counseling-header">
+            <img src="./images/CareerCounseling.png" alt="Career Counselling">
+          <h3 class="career-counseling-title">Career Counselling</h3>
+        </div>
+        
+        <p class="career-counseling-description">
+          Making the right career choice is crucial for long-term success. Our expert <br> career counselling services provide personalized guidance to help you identify <br> the best academic programs, universities, and career paths based on your <br> strengths, interests, and global opportunities. Whether you're exploring options <br> or need strategic advice, we ensure you make informed decisions that align with <br> your aspirations.
+        </p>
+        
+        <ul class="career-counseling-benefits">
+          <li>Identify strengths and choose the right career path.</li>
+          <li>Find the best-fit course and institution globally.</li>
+          <li>Stay informed about future career opportunities.</li>
+          <li>Explore financial aid and scholarship options.</li>
+          <li>Improve your admission chances with expert guidance.</li>
+        </ul>
+        
+        <button class="career-counseling-btn">View Career Counseling in Detail</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Partner Universities Section -->
+<section class="partner-universities-section">
+  <div class="partner-universities-container">
+    <h2 class="partner-universities-title">
+      Partnered with <span class="highlight-blue">500+ Trusted Universities Worldwide</span>
+    </h2>
+    
+    <div class="partner-universities-logos">
+      <div class="partner-university-logo">
+        <img src="./images/PCH Civil.png" alt="University Logo 1">
+      </div>
+      <div class="partner-university-logo">
+        <img src="./images/Rawco.png" alt="University Logo 2">
+      </div>
+      <div class="partner-university-logo">
+        <img src="./images/Groundtech Contractors.png" alt="University Logo 3">
+      </div>
+      <div class="partner-university-logo">
+        <img src="./images/Reardon Demolition.png" alt="University Logo 4">
+      </div>
+      <div class="partner-university-logo">
+        <img src="./images/A&K Tucker Excavations.png" alt="University Logo 5">
+      </div>
+      <div class="partner-university-logo">
+        <img src="./images/Grand Civil.png" alt="University Logo 6">
+      </div>
+      
+    </div>
+    
+    <!-- Divider Line -->
+    <div class="partner-universities-divider"></div>
+  </div>
+</section>
+
+<!-- Student Success Stories Section -->
+<section class="student-success-section">
+  <div class="student-success-container">
+    <div class="student-success-header">
+      <h2 class="student-success-title">
+        Student Success Stories: <span class="highlight-blue">Hear from Our Achievers</span>
+      </h2>
+      <p class="student-success-subtitle">
+        We help students make informed decisions and achieve their academic dreams with confidence.
+      </p>
+    </div>
+
+    <!-- Google Reviews Section -->
+   
+
+    <div class="student-stories-grid">
+      <!-- Google Reviews Section -->
+      <div class="google-reviews-section">
+        <div class="google-review-left">
+          <h3 class="google-rating-title">Excellent</h3>
+          <div class="google-stars">
+            <img src="./images/Stars.png" alt="5 Stars" class="google-rating-stars">
+          </div>
+          <p class="google-review-info">Based on <span class="review-count">256 reviews</span></p>
+        </div>
+        <div class="google-logo">
+          <img src="./images/Google.png" alt="Google" class="google-logo-img">
+        </div>
+      </div>
+      
+      <!-- Story Cards Container -->
+      <div class="story-cards-container">
+        <!-- Story Card 1 -->
+        <div class="story-card">
+          <div class="story-header">
+            <div class="student-info">
+              <img src="./images/Sailesh.png" alt="Sailesh Upreti" class="student-avatar">
+              <div class="student-details">
+                <h4 class="student-name">Sailesh Upreti</h4>
+                <p class="student-date">17 Feb 2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="story-rating">
+            <img src="./images/Stars.png" alt="5 Stars" class="rating-stars">
+          </div>
+          <p class="story-text">
+            360 Education made my study abroad journey seamless! From selecting the right university to securing my visa, their expert...
+          </p>
+          <button class="read-more-btn">Read More...</button>
+        </div>
+
+        <!-- Story Card 2 -->
+        <div class="story-card">
+          <div class="story-header">
+            <div class="student-info">
+              <img src="./images/Aarju.png" alt="Aarju Regmi" class="student-avatar">
+              <div class="student-details">
+                <h4 class="student-name">Aarju Regmi</h4>
+                <p class="student-date">17 Feb 2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="story-rating">
+            <img src="./images/Stars.png" alt="5 Stars" class="rating-stars">
+          </div>
+          <p class="story-text">
+            360 Education made my study abroad journey seamless! From selecting the right university to securing my visa, their expert...
+          </p>
+          <button class="read-more-btn">Read More...</button>
+        </div>
+
+        <!-- Story Card 3 -->
+        <div class="story-card">
+          <div class="story-header">
+            <div class="student-info">
+              <img src="./images/Sakar.png" alt="Sakar Basnet" class="student-avatar">
+              <div class="student-details">
+                <h4 class="student-name">Sakar Basnet</h4>
+                <p class="student-date">17 Feb 2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="story-rating">
+            <img src="./images/Stars.png" alt="5 Stars" class="rating-stars">
+          </div>
+          <p class="story-text">
+            360 Education made my study abroad journey seamless! From selecting the right university to securing my visa, their expert...
+          </p>
+          <button class="read-more-btn">Read More...</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+ <footer class="footer">
+        <div class="footer-container">
+            <!-- Main Footer Content -->
+            <div class="footer-main">
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-title">QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#" style="color: #F2B705;">Destinations</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Tests</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-column">
+                    <h3 class="footer-title">SERVICES</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Career Counseling</a></li>
+                        <li><a href="#">Test Preparation</a></li>
+                        <li><a href="#">Financial Advice</a></li>
+                        <li><a href="#">Pre-Departure Orientation</a></li>
+                        <li><a href="#">University Admissions</a></li>
+                        <li><a href="#">Visa Facilitation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Destinations -->
+                <div class="footer-column">
+                    <h3 class="footer-title">DESTINATIONS</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">USA</a></li>
+                        <li><a href="#">UK</a></li>
+                        <li><a href="#">Canada</a></li>
+                        <li><a href="#">Thailand</a></li>
+                        <li><a href="#">UAE</a></li>
+                        <li><a href="#">New Zealand</a></li>
+                        <li><a href="#">Europe</a></li>
+                    </ul>
+                </div>
+
+                <!-- Test Preparation -->
+                <div class="footer-column">
+                    <h3 class="footer-title">TEST PREPARATION</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">IELTS</a></li>
+                        <li><a href="#">TOEFL</a></li>
+                        <li><a href="#">PTE</a></li>
+                        <li><a href="#">SAT</a></li>
+                        <li><a href="#">OET</a></li>
+                        <li><a href="#">Duolingo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-column">
+                    <h3 class="footer-title">COMPANY</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Locations Section -->
+            <div class="footer-locations">
+              <h3 class="locations-title">OUR LOCATIONS</h3>
+                <div class="locations-grid">
+              
+                    <!-- Head Office -->
+                    <div class="location-card glass">
+                      
+                      <div class="location-header">
+                            <img src="./images/HeadOffice.png" alt="Head Office" class="location-icon head-office">
+                            <div class="office-wrapper">
+                              <span class="location-label">HEAD OFFICE</span>
+                              <h4 class="location-name">Kamalpokhari</h4>
+                            </div>
+                        </div>
+                        <div class="location-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="contact-info">
+                                    <span class="contact-label">Call Us</span>
+                                    <span class="contact-value">01-5321267, 01-5332779</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-info">
+                                    <span class="contact-label">E-mail Us</span>
+                                    <span class="contact-value">hello@360education.global</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="contact-info">
+                                    <span class="contact-label">Visit Us</span>
+                                    <span class="contact-value">Remwork Building, Kamalpokhari, Kathmandu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kumaripati -->
+                    <div class="location-card glass">
+                        <div class="location-header">
+                            <img src="./images/Kumaripati.png" alt="Kumaripati" class="location-icon">
+                            <h4 class="location-name">Kumaripati</h4>
+                        </div>
+                        <div class="location-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="contact-info">
+                                    <span class="contact-label">Call Us</span>
+                                    <span class="contact-value">01-5321268, 01-5321267, 01-5332779</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-info">
+                                    <span class="contact-label">E-mail Us</span>
+                                    <span class="contact-value">hello@360education.global</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="contact-info">
+                                    <span class="contact-label">Visit Us</span>
+                                    <span class="contact-value">Remwork Building, Kamalpokhari, Kathmandu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Biratnagar -->
+                    <div class="location-card glass">
+                        <div class="location-header">
+                            <img src="./images/Biratnagar.png" alt="Biratnagar" class="location-icon">
+                            <h4 class="location-name">Biratnagar</h4>
+                        </div>
+                        <div class="location-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="contact-info">
+                                    <span class="contact-label">Call Us</span>
+                                    <span class="contact-value">01-5321268, 01-5321267, 01-5332779</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-info">
+                                    <span class="contact-label">E-mail Us</span>
+                                    <span class="contact-value">hello@360education.global</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="contact-info">
+                                    <span class="contact-label">Visit Us</span>
+                                    <span class="contact-value">Remwork Building, Kamalpokhari, Kathmandu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accreditation and Copyright Section -->
+            <div class="footer-bottom">
+                <!-- Accreditation Section -->
+                <div class="accreditation-section">
+                    <div class="accreditation-logos">
+                        <img src="./images/ICEF.png" alt="ICEF" class="accreditation-logo">
+                        <img src="./images/BritishCouncil.png" alt="British Council" class="accreditation-logo mobile-d-none">
+                        <img src="./images/SecondICEF.png" alt="ICEF" class="accreditation-logo mobile-d-none">
+                        <img src="./images/NAAER.png" alt="NAAER" class="accreditation-logo mobile-d-none">
+                        <img src="./images/QEAC.png" alt="QEAC" class="accreditation-logo mobile-d-none">
+                        <img src="./images/TITI.png" alt="TITI" class="accreditation-logo mobile-d-none">
+                        <img src="./images/USATC.png" alt="USATC" class="accreditation-logo mobile-d-none">
+                    </div>
+                    <p class="accreditation-text">
+                        Our institution is recognized and accredited by leading global education bodies, ensuring high-quality standards and 
+                        credibility. These accreditations validate our commitment to excellence, providing students with internationally accepted 
+                        qualifications and enhanced career prospects.
+                    </p>
+                </div>
+
+                <!-- Copyright Section -->
+                <div class="copyright-section">
+                    <div class="copyright-left">
+                        <img src="./images/Primary Logo.png" alt="360 Education Logo" class="footer-logo mobile-d-none">
+                        <div class="copyright-text">
+                            <p>© 2025, 360 Education.</p>
+                            <p>All Rights are Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="copyright-right mobile-d-none">
+                        <p class="mobile-d-none">Designed and Developed by:</p>
+                        <img src="./images/MakuraCreations.png" alt="Makura Creations" class="developer-logo mobile-d-none">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init();
+  </script>
+</body>
+</html>
