@@ -1,47 +1,38 @@
-// Add interactivity for decorative elements
-// Example: Animate the arrow
 const decorativeArrow = document.querySelector('.decorative-arrow');
 if (decorativeArrow) {
   decorativeArrow.style.animation = 'bounce 2s infinite';
 }
 
-// Mobile Navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgerToggle = document.getElementById('hamburgerToggle');
   const mobileNavOverlay = document.getElementById('mobileNavOverlay');
   const mobileNavClose = document.getElementById('mobileNavClose');
   
-  // Toggle mobile navigation
   hamburgerToggle.addEventListener('click', function() {
     hamburgerToggle.classList.toggle('active');
     mobileNavOverlay.classList.toggle('active');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+    document.body.style.overflow = 'hidden';
   });
   
-  // Close mobile navigation
   function closeMobileNav() {
     hamburgerToggle.classList.remove('active');
     mobileNavOverlay.classList.remove('active');
-    document.body.style.overflow = ''; // Restore scrolling
+    document.body.style.overflow = ''; 
   }
   
-  // Close button
   mobileNavClose.addEventListener('click', closeMobileNav);
   
-  // Close when clicking overlay
   mobileNavOverlay.addEventListener('click', function(e) {
     if (e.target === mobileNavOverlay) {
       closeMobileNav();
     }
   });
   
-  // Close when clicking nav links
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
   mobileNavLinks.forEach(link => {
     link.addEventListener('click', closeMobileNav);
   });
   
-  // Close on escape key
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && mobileNavOverlay.classList.contains('active')) {
       closeMobileNav();
@@ -49,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Slider functionality
 document.addEventListener('DOMContentLoaded', function() {
   const slider = document.getElementById('destinationsSlider');
   const prevBtn = document.querySelector('.prev-btn');
@@ -61,10 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
   let visibleCards = Math.floor(slider.parentElement.offsetWidth / cardWidth);
   let maxPosition = (cards.length - visibleCards) * cardWidth;
   
-  // Initialize slider
   updateSlider();
   
-  // Next slide
   nextBtn.addEventListener('click', function() {
     if (currentPosition > -maxPosition) {
       currentPosition -= cardWidth * visibleCards;
@@ -75,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  // Previous slide
   prevBtn.addEventListener('click', function() {
     if (currentPosition < 0) {
       currentPosition += cardWidth * visibleCards;
@@ -86,11 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  // Update slider position
   function updateSlider() {
     slider.style.transform = `translateX(${currentPosition}px)`;
     
-    // Update button states
     prevBtn.style.opacity = currentPosition === 0 ? 0.5 : 1;
     prevBtn.style.cursor = currentPosition === 0 ? 'default' : 'pointer';
     
@@ -98,13 +83,11 @@ document.addEventListener('DOMContentLoaded', function() {
     nextBtn.style.cursor = currentPosition <= -maxPosition ? 'default' : 'pointer';
   }
   
-  // Handle window resize
   window.addEventListener('resize', function() {
     cardWidth = cards[0].offsetWidth + 24;
     visibleCards = Math.floor(slider.parentElement.offsetWidth / cardWidth);
     maxPosition = (cards.length - visibleCards) * cardWidth;
     
-    // Adjust current position if needed
     if (currentPosition < -maxPosition) {
       currentPosition = -maxPosition;
     }
@@ -112,7 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
     updateSlider();
   });
   
-  // Keyboard navigation
   document.addEventListener('keydown', function(e) {
     if (e.key === 'ArrowLeft') {
       prevBtn.click();
